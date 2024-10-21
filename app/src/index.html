@@ -7,9 +7,20 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-stone-800">
+<body class="bg-gradient-to-r from-black via-gray-800 to-gray-900">
     
     <h1 class="w-96  bg-gray-600 text-white font-bold">Hello Tailwind</h1>
+
+    <div>
+        <button class="text-white bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-800 hover:to-blue-950
+                        px-5 py-3 mt-10 ml-10 rounded-xl hover:translate-y-2
+                         hover:text-black hover:scale-110 
+                         transition duration-600 
+                         focus:ring-4 focus:ring-white"> <!-- ? เส้นขอบ ring ตอน click click-ใช้-Foucus-->
+            <i class="fa-solid fa-user mr-2 text-black bg-white rounded-full p-2
+             hover:bg-black hover:text-white"></i>Profile
+        </button>
+    </div>
 
     <div>
         <button class="bg-cyan-500 px-6 py-4 mt-10 ml-10 rounded-md border-4 border-white">Submit</button>
