@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input form</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="bg-[#EEEEEE]">
+
+    <div class="w-screen h-screen flex flex-col gap-y-4 items-center justify-center">
+
+        <div class="flex flex-col gap-2">
+            <label for="" class=" font-bold tracking-wider"><i class="fa-solid fa-user mr-2 text-[20px]"></i>Username</label>
+            <input type="text"
+                placeholder="Please Enter your Username"
+                class="w-[250px] py-2 rounded-md px-4 focus:outline-none border-2 border-gray-300 focus:border-green-500 
+                hover:border-green-300 transition duration-600">
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <label for="" class=" font-bold tracking-wider"><i class="fa-solid fa-key mr-2 text-[20px]"></i>Password</label>
+            <div class="relative">
+                <input type="password" 
+                placeholder="*******"
+                class="w-[250px] relative py-2 rounded-md px-8 focus:outline-none border-2 border-gray-300 focus:border-orange-500 
+                hover:border-orange-300 transition duration-600"> <i class="fa-solid fa-lock absolute top-3 left-3"></i>
+            </div>
+            
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <label for="" class=" font-bold tracking-wider"><i class="fa-solid fa-envelope mr-2 text-[20px]"></i> Email</label>
+            <input type="Email"
+                placeholder="QZzz@outlook.com"
+                class="w-[250px] py-2 rounded-md px-4 focus:outline-none border-2 border-gray-300 focus:border-green-500 
+                hover:border-green-300 transition duration-600">
+        </div>
+
+        <div class="flex flex-col items-start">
+            <label for="" class="tracking-wider">Select</label>
+            <select name="" id="" class="border-b">
+                <option value="" class="text-center mr-2" disabled selected>Menu</option>
+                <option value="">Tailwind</option>
+                <option value="">Bootstrap</option>
+                <option value="">CSS Vanilla</option>
+                <option value="">PHP</option>
+                <option value="">JavaScript</option>
+            </select>
+        </div>
+
+        <!-- ? Shadow
+               * 0px คือการขยับเงาในแนวแกน X
+               * 4px คือการขยับเงาในแนวแกน Y
+               * 10px คือขนาดของความฟุ้งของเงา
+               * 0px คือความเข้มของเงา 
+               * เลือกสีได้แบบกำหนดชื่อสี หรือ RGB -->
+
+        <div class="flex mt-5">
+            <button class="px-4 py-3 border-2 border-gray-300  
+            rounded-md shadow-[0px_4px_10px_0px_gray]">
+                Submit <i class="fa-solid fa-check"></i>
+            </button>
+        </div>
+
+        <div class="flex mt-5">
+            <button class="px-4 py-3 border-2 w-[150px] border-gray-300  rounded-md 
+            shadow-[0px_4px_10px_0px_gray]
+            hover:shadow-[0px_4px_20px_0px_gray]
+            transition-all duration-600">
+                Submit <i class="fa-solid fa-check"></i>
+            </button>
+        </div>
+        
+    </div>
+
+</body>
+</html>

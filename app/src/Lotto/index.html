@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- ? navbar section  -->
+     <div class="bg-[#f3f3f3] h-16 w-full]">
+
+        <div class="mx-auto max-w-5xl flex items-center justify-between h-full"> <!--? ให้อยู่กลางๆในหน้าจอ fullscreen max-w-5xl-->
+            
+            <div class="flex items-center gap-2 font-bold">
+                <img 
+                class="w-14 h-10"
+                src="images/Logo_Lotto.png" alt="">
+                <h1 class="text-2xl">Lottory Online</h1>
+            </div>
+
+            <div class="hidden md:flex lg:text-md lg:text-lg gap-6 font-bold">
+                <a href="" class="">Home</a>
+                <a href="" class="">Buy</a>
+                <a href="" class="">Check</a>
+                <a href="" class="">History</a>
+            </div>
+        </div>
+
+     </div>
+    
+     <!-- ? content section -->
+    <div>
+        <div class="mx-auto max-w-5xl px-3 py-3 bg-[#08C2FF] shadow-lg rounded-lg my-8">
+            <img
+            class="object-cover sm:h-40 md:h-60 w-full " 
+            src="https://www.tinytickers.org/wp-content/uploads/2023/06/Tiny-Tickers-Lottery-1536x864-1.png" alt="">
+        </div>
+    </div>
+
+    <div class="mx-auto max-w-5xl bg-gray- flex flex-col items-center gap-4 p-14 rounded-lg shadow-lg ">
+        <h2 class="text-3xl font-">Search Lottery</h2>
+
+        <div class="flex justify-between items-center w-full">
+            <p class="font-semibold">Period 1 October 2024</p>
+            <p class="text-red-500 hover:underline cursor-pointer">Clear</p>
+        </div>
+
+        <div class="w-full flex justify-between sm:px-16 md:px-24 lg:px-28">
+            <input type="text" 
+            class="w-14 h-12 md:w-16 lg:w-20 border-2 border-yellow-500 focus:outline-none hover:border-yellow-300 text-center rounded-lg font-bold text-lg">
+            <input type="text" 
+            class="w-14 h-12 md:w-16 lg:w-20 border-2 border-yellow-500 focus:outline-none hover:border-yellow-300 text-center rounded-lg font-bold text-lg">
+            <input type="text" 
+            class="w-14 h-12 md:w-16 lg:w-20 border-2 border-yellow-500 focus:outline-none hover:border-yellow-300 text-center rounded-lg font-bold text-lg">
+            <input type="text" 
+            class="w-14 h-12 md:w-16 lg:w-20 border-2 border-yellow-500 focus:outline-none hover:border-yellow-300 text-center rounded-lg font-bold text-lg">
+            <input type="text" 
+            class="w-14 h-12 md:w-16 lg:w-20 border-2 border-yellow-500 focus:outline-none hover:border-yellow-300 text-center rounded-lg font-bold text-lg">
+            <input type="text" 
+            class="w-14 h-12 md:w-16 lg:w-20 border-2 border-yellow-500 focus:outline-none hover:border-yellow-300 text-center rounded-lg font-bold text-lg">
+            
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-3 md-gap-6 w-full px-4">
+            <button class="p-3 bg-gray-400 text-gray-800 text-sm rounded-md  hover:bg-gray-500 hover:text-white transition-colors duration-300 ">View all</button>
+            <button class="p-3 bg-gray-200 text-gray-700 text-sm rounded-md ">One ticket</button>
+            <button class="p-3 bg-gray-200 text-gray-700 text-sm rounded-md ">Set of 2 pieces</button>
+            <button class="p-3 bg-gray-200 text-gray-700 text-sm rounded-md ">Set of 3 pieces</button>
+            <button class="p-3 bg-gray-200 text-gray-700 text-sm rounded-md ">Set of 4 pieces</button>
+            <button class="p-3 bg-gray-200 text-gray-700 text-sm rounded-md ">Set of 5 pieces</button>
+            <button class="p-3 bg-gray-200 text-gray-700 text-sm rounded-md col-span-1 md:col-span-3 lg:col-span-3">Popular Numbers</button>
+            <button class="p-3 bg-gray-200 text-gray-700 text-sm rounded-md col-span-1 md:col-span-3 lg:col-span-3">Numbers of God</button>
+            <button class="p-3 bg-gray-600 text-white text-sm rounded-md col-span-2 md:col-span-3 lg:col-span-3 hover:bg-gray-700 transition-colors duration-300"><i class="fa-solid fa-magnifying-glass mr-2"></i>Search</button>
+        </div>
+    </div>
+
+    <div class="py-16 max-w-5xl mx-auto sm:px-6 md:px-0 lg:px-0">
+        <h1 class="text-lg font-semibold text-gray-600">Search Results</h1>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-5 w-full py-4">
+            <div class="bg-[#493628] overflow-hidden rounded-lg relative shadow-md">
+                <img src="https://www.lottery.co.th/wp-content/uploads/2024/09/Demo-lottery-thai-1-10-2024.jpg" class="object-cover" alt="">
+                <div class="bg-[#e7cea6] p-3 flex justify-between items-center">
+                    <p class="text-[#493628] font-semibold">80 Baht</p>
+                    <button class="text-[#493628] flex items-center">
+                        <i class="fa-solid fa-cart-shopping mr-2"></i>Add to cart
+                    </button>
+                </div>             
+            </div>
+
+            <div class="bg-[#493628] overflow-hidden rounded-lg relative shadow-md">
+                <img src="https://www.lottery.co.th/wp-content/uploads/2024/09/Demo-lottery-thai-1-10-2024.jpg" class="object-cover" alt="">
+                <div class="bg-[#e7cea6] p-3 flex justify-between items-center">
+                    <p class="text-[#493628] font-semibold">80 Baht</p>
+                    <button class="text-[#493628] flex items-center">
+                        <i class="fa-solid fa-cart-shopping mr-2"></i>Add to cart
+                    </button>
+                </div>             
+            </div>
+
+            <div class="bg-[#493628] overflow-hidden rounded-lg relative shadow-md">
+                <img src="https://www.lottery.co.th/wp-content/uploads/2024/09/Demo-lottery-thai-1-10-2024.jpg" class="object-cover" alt="">
+                <div class="bg-[#e7cea6] p-3 flex justify-between items-center">
+                    <p class="text-[#493628] font-semibold">80 Baht</p>
+                    <button class="text-[#493628] flex items-center">
+                        <i class="fa-solid fa-cart-shopping mr-2"></i>Add to cart
+                    </button>
+                </div>             
+            </div>
+
+            <div class="bg-[#493628] overflow-hidden rounded-lg relative shadow-md">
+                <img src="https://www.lottery.co.th/wp-content/uploads/2024/09/Demo-lottery-thai-1-10-2024.jpg" class="object-cover" alt="">
+                <div class="bg-[#e7cea6] p-3 flex justify-between items-center">
+                    <p class="text-[#493628] font-semibold">80 Baht</p>
+                    <button class="text-[#493628] flex items-center">
+                        <i class="fa-solid fa-cart-shopping mr-2"></i>Add to cart
+                    </button>
+                </div>             
+            </div>
+
+            <div class="bg-[#493628] overflow-hidden rounded-lg relative shadow-md">
+                <img src="https://www.lottery.co.th/wp-content/uploads/2024/09/Demo-lottery-thai-1-10-2024.jpg" class="object-cover" alt="">
+                <div class="bg-[#e7cea6] p-3 flex justify-between items-center">
+                    <p class="text-[#493628] font-semibold">80 Baht</p>
+                    <button class="text-[#493628] flex items-center">
+                        <i class="fa-solid fa-cart-shopping mr-2"></i>Add to cart
+                    </button>
+                </div>             
+            </div>
+
+            <div class="bg-[#493628] overflow-hidden rounded-lg relative shadow-md">
+                <img src="https://www.lottery.co.th/wp-content/uploads/2024/09/Demo-lottery-thai-1-10-2024.jpg" class="object-cover" alt="">
+                <div class="bg-[#e7cea6] p-3 flex justify-between items-center">
+                    <p class="text-[#493628] font-semibold">80 Baht</p>
+                    <button class="text-[#493628] flex items-center">
+                        <i class="fa-solid fa-cart-shopping mr-2"></i>Add to cart
+                    </button>
+                </div>
+                <div class="bg-[#e7cea6]"></div>            
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <!-- ? section footer -->
+    <div class="bg-[#f3f3f3] p-4 flex items-center justify-around fixed bottom-0 inset-x-0 lg:hidden ">
+        <div class="flex flex-col font-bold items-center gap-1 text-gray-700 hover:text-gray-800 hover:border-[#825B32] border-b-4 border-transparent  hover:scale-110 transition duration-600s">
+            <i class="fa-solid fa-house "></i>
+            <a href="">Home</a>
+        </div>
+
+        <div class="flex flex-col font-bold items-center gap-1 text-gray-700 hover:text-gray-800 hover:border-[#825B32] border-b-4 border-transparent hover:scale-110 transition duration-600s">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="">Buy</a>
+        </div>
+
+        <div class="flex flex-col font-bold items-center gap-1 text-gray-700 hover:text-gray-800 hover:border-[#825B32] border-b-4 border-transparent hover:scale-110 transition duration-600s">
+            <i class="fa-solid fa-check"></i>
+            <a href="">Check</a>
+        </div>
+
+        <div class="flex flex-col font-bold items-center gap-1 text-gray-700 hover:text-gray-800 hover:border-[#825B32] border-b-4 border-transparent hover:scale-110 transition duration-600s">
+            <i class="fa-solid fa-wallet"></i>
+            <a href="">Wallet</a>
+        </div>
+
+        <div class="flex flex-col font-bold items-center gap-1 text-gray-700 hover:text-gray-800 hover:border-[#825B32] border-b-4 border-transparent  hover:scale-110 transition duration-600s">
+            <i class="fa-solid fa-file"></i>
+            <a href="">History</a>
+        </div>
+    </div>
+    
+    
+
+    
+    
+
+    
+
+    
+</body>
+</html>
