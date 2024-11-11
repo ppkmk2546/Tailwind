@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shipee</title>
+    <title>WiZzee</title>
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,90 +11,94 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <!-- ? header section -->
-    <div class="bg-[#ed4d2d] text-white py-2 ">
 
-        <div class="container mx-auto max-w-6xl ">
+    <div class="sticky top-0 z-50"> 
 
-            <div class="flex justify-between items-center">
+        <!-- ? header section -->
+        <div class="bg-[#ed4d2d] text-white py-2 ">
 
-                <div class="flex items-center gap-3">
-                    <a href="#" class="text-sm hover:text-gray-300">Seller Centre</a>
-                    <span class="text-sm text-[#f67360]">|</span>
-                    <a href="#" class="text-sm hover:text-gray-300">เริ่มต้นขายสินค้า</a>
-                    <span class="text-sm text-[#f67360]">|</span>
-                    <a href="#" class="text-sm hover:text-gray-300">ดาวน์โหลด</a>
-                    <span class="text-sm text-[#f67360]">|</span>
-                    <p class="text-sm">ติดตามเราบน</p>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-line"></i></a>
+            <div class="container mx-auto max-w-6xl ">
+
+                <div class="flex justify-between items-center">
+
+                    <div class="flex items-center gap-3">
+                        <a href="#" class="text-sm hover:text-gray-300">Seller Centre</a>
+                        <span class="text-sm text-[#f67360]">|</span>
+                        <a href="#" class="text-sm hover:text-gray-300">เริ่มต้นขายสินค้า</a>
+                        <span class="text-sm text-[#f67360]">|</span>
+                        <a href="#" class="text-sm hover:text-gray-300">ดาวน์โหลด</a>
+                        <span class="text-sm text-[#f67360]">|</span>
+                        <p class="text-sm">ติดตามเราบน</p>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-line"></i></a>
+                    </div>
+            
+                    <div class="flex items-center gap-3">
+                        <a href="#" class="text-sm hover:text-gray-300"><i class="fa-regular fa-bell mr-2"></i>การแจ้งเตือน</a>
+                        <a href="#" class="text-sm hover:text-gray-300"><i class="fa-regular fa-circle-question mr-2"></i>ช่วยเหลือ</a>
+                        <a href="#" class="text-sm hover:text-gray-300"><i class="fa-solid fa-globe mr-2"></i>ไทย<i class="fa-solid fa-chevron-down ml-1"></i></a>
+                        <a href="#" class="text-sm hover:text-gray-300">สมัครใหม่</a>
+                        <span class="text-sm text-[#f67360]">|</span>
+                        <a href="#" class="text-sm hover:text-gray-300">เข้าสู่ระบบ</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ? nav section -->
+        <nav class="bg-[#ed4d2d] py-4 ">
+
+            <div class="container mx-auto max-w-6xl flex justify-between items-center">
+
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-hat-wizard text-white text-[45px]"></i>
+                    <h1 class="text-3xl text-white">
+                        WiZzee
+                    </h1>
                 </div>
         
-                <div class="flex items-center gap-3">
-                    <a href="#" class="text-sm hover:text-gray-300"><i class="fa-regular fa-bell mr-2"></i>การแจ้งเตือน</a>
-                    <a href="#" class="text-sm hover:text-gray-300"><i class="fa-regular fa-circle-question mr-2"></i>ช่วยเหลือ</a>
-                    <a href="#" class="text-sm hover:text-gray-300"><i class="fa-solid fa-globe mr-2"></i>ไทย<i class="fa-solid fa-chevron-down ml-1"></i></a>
-                    <a href="#" class="text-sm hover:text-gray-300">สมัครใหม่</a>
-                    <span class="text-sm text-[#f67360]">|</span>
-                    <a href="#" class="text-sm hover:text-gray-300">เข้าสู่ระบบ</a>
+                <div class="flex-1 px-6 relative">
+                    <input 
+                        type="text" 
+                        placeholder="ลูกค้าใหม่ รับเลย โค้ดส่วนลด หรือโค้ดส่งฟรี*"
+                        class="w-full px-4 py-4 rounded">
+                    
+                    <div class="absolute right-8 inset-y-2"> <!-- ! inset-y-2 กำหนดแบบบนล่างจะได้ไม่ต้องมา top,bottom หลายที-->
+                        <button class="bg-[#f85c39] px-6 py-2 rounded text-white"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                    <div class="flex justify-between items-center text-sm mt-2 text-white">
+                        <a href="#">ชั้นวางของ</a>
+                        <a href="#">พาวเวอร์แบงค์</a>
+                        <a href="#">เสื้อกันหนาว</a>
+                        <a href="#">รองเท้า</a>
+                        <a href="#">กระเป๋า</a>
+                        <a href="#">ชุดนอน</a>
+                        <a href="#">แก้วเก็บความเย็น</a>
+                        <a href="#">เสื้อ</a>
+                        <a href="#">หูฟังบูลทูธ</a>
+                        <a href="#">คอนเทคเลนส์</a>
+                        <a href="#">แว่นตา</a>
+                        <a href="#">ของเล่นเด็ก</a>
+                    </div>
+
+                </div>
+                
+
+                <div>
+                    <i class="fa-solid fa-cart-shopping text-3xl text-white mb-6 ml-4"></i>
                 </div>
 
             </div>
 
-        </div>
+        </nav>
 
     </div>
-
-     <!-- ? nav section -->
-      <nav class="bg-[#ed4d2d] py-4">
-
-        <div class="container mx-auto max-w-6xl flex justify-between items-center">
-
-            <div class="flex items-center gap-2">
-                <i class="fa-solid fa-hat-wizard text-white text-[45px]"></i>
-                <!-- <i class="fa-brands fa-shopify text-white text-[45px]"></i> -->
-                <h1 class="text-3xl text-white">
-                    WiZzee
-                </h1>
-            </div>
     
-            <div class="flex-1 px-6 relative">
-                <input 
-                    type="text" 
-                    placeholder="ลูกค้าใหม่ รับเลย โค้ดส่วนลด หรือโค้ดส่งฟรี*"
-                    class="w-full px-4 py-4 rounded">
-                
-                <div class="absolute right-8 inset-y-2"> <!-- ! inset-y-2 กำหนดแบบบนล่างจะได้ไม่ต้องมา top,bottom หลายที-->
-                    <button class="bg-[#f85c39] px-6 py-2 rounded text-white"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-
-                <div class="flex justify-between items-center text-sm mt-2 text-white">
-                    <a href="#">ชั้นวางของ</a>
-                    <a href="#">พาวเวอร์แบงค์</a>
-                    <a href="#">เสื้อกันหนาว</a>
-                    <a href="#">รองเท้า</a>
-                    <a href="#">กระเป๋า</a>
-                    <a href="#">ชุดนอน</a>
-                    <a href="#">แก้วเก็บความเย็น</a>
-                    <a href="#">เสื้อ</a>
-                    <a href="#">หูฟังบูลทูธ</a>
-                    <a href="#">คอนเทคเลนส์</a>
-                    <a href="#">แว่นตา</a>
-                    <a href="#">ของเล่นเด็ก</a>
-                </div>
-
-            </div>
-            
-
-            <div>
-                <i class="fa-solid fa-cart-shopping text-3xl text-white mb-6 ml-4"></i>
-            </div>
-
-        </div>
-
-      </nav>
         
 
     <!-- ? Main section -->
@@ -105,9 +109,9 @@
             <div class="container mx-auto max-w-6xl py-4">
 
                 <div class="flex flex-col gap-3"> 
-
-                    <div class="grid grid-cols-3 gap-1"> <!--? img-->
-                        <div class="col-span-2" >
+                    
+                    <div class="grid grid-cols-3 gap-1 shadow-md"> <!--? img-->
+                        <div class="col-span-2 " >
                             <img 
                             class="w-full h-full object-cover rounded"
                             src="https://cf.shopee.co.th/file/th-11134258-7rase-m1f0rfwnlkfn24_xxhdpi" alt="">
@@ -128,7 +132,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-[#ffffff] flex justify-around items-center mt-4 p-5 rounded-md">
+                    <div class="bg-[#ffffff] flex justify-around items-center mt-4 p-5 rounded-md shadow-sm">
                         <a
                             class="flex flex-col items-center gap-1 hover:-translate-y-2 transition duration-600" 
                             href="# ">
@@ -236,16 +240,17 @@
                     </div>
                     
                 </div>
-
-                <div class="container mx-auto max-w-6xl" >
+                
+                <div class="container mx-auto max-w-6xl">
                     <div>
                         <img
-                        class="w-full object-cover py-4" 
+                        class="w-full object-cover py-4 " 
                         src="https://cf.shopee.co.th/file/th-11134258-7rasc-m1fkshjrqepjea" alt="">
                     </div>
                 </div>
 
-                <div class="bg-white h-96">
+                <!-- ? หมวดหมู่-->
+                <div class="bg-white h-96 mt-5 shadow-sm">
                     <div class="h-16 flex items-center text-gray-600 px-6">
                         หมวดหมู่
                     </div>
@@ -425,7 +430,7 @@
                         <div class="border border-gray-100 flex flex-col justify-center items-center">
                             <div>
                                 <img 
-                                class="w-20 h-20"
+                                class="w-20 h-20 "
                                 src="https://down-th.img.susercontent.com/file/a1e2db8724dcd09ace3371b5d0785140@resize_w320_nl.webp" alt="">
                             </div>
                             <p class="p-2 text-center text-sm text-[#333333]">เกมและอุปกรณ์เสริม<p>
@@ -433,10 +438,327 @@
                     </div>
                 </div>
 
+                <div class="bg-white h-80 mt-5">
+                    <div class="h-16 flex items-center text-[#ee4d2d] px-6 text-2xl">
+                        <p class="font-bold ">F<span><i class="fa-solid fa-bolt"></i></span>ASH</p>
+                        <p class="text-[#ee4e2e] ml-2">SALE</p>
+
+                        <div class="flex items-center justify-center ">
+                            <p class="ml-2 text-[12px] text-white font-bold flex justify-center items-center bg-black h-5 w-7 rounded-md shadow-sm">01</p>
+                            <p class="ml-2 text-[12px] text-white font-bold flex justify-center items-center bg-black h-5 w-7 rounded-md shadow-sm">23</p>
+                            <p class="ml-2 text-[12px] text-white font-bold flex justify-center items-center bg-black h-5 w-7 rounded-md shadow-sm">57</p>
+                        </div> 
+                    </div>
+
+                    <div class="grid grid-cols-6 grid-rows-1">
+
+                        <!--? กล่องที่ 1 -->
+                        <div class=" flex flex-col justify-center items-center relative">
+
+                            <div class="bg-[#d0011b] px-2 py-1 absolute top-3 left-2 rounded-md shadow-md">
+                                <p class="text-white text-[10px]">Mall</p>
+                            </div>
+
+                            <div class="bg-[#ffd839] flex flex-col items-center justify-center px-3 py-1 absolute top-2 right-2 text-xs rounded-md shadow-md">
+                                <p class="text-white">ลด</p>
+                                <p class="text-red-600">37%</p>
+                            </div>
+
+                            <div class="bg-[#ee4d2d] px-2 py-1 absolute bottom-10 left-2 rounded-sm shadow-sm flex flex-col justify-center items-center">
+                                <p class="text-white text-[12px]">11.11</p>
+                            </div>
+
+                            <img 
+                            class="w-30  h-30"
+                            src="https://down-th.img.susercontent.com/file/th-11134207-7rasg-m1u55j99wi9583.webp" alt="">
+
+                            
+                            <p class="p-2 text-center text-[20px] text-[#d0011b]">฿ 2,412</p>
+
+                            <div class="bg-[#ffbda6] w-[10rem] h-5 rounded-full relative">
+                                <div class="bg-gradient-to-r from-[#f83600] to-[#f9d423] w-2/4 h-5 rounded-full"></div>
+                                <span class="absolute inset-0 flex items-center justify-center text-white text-sm">
+                                  ขายดี
+                                </span>
+                            </div>
+                              
+                              
+                        </div>
+
+                        <!--? กล่องที่ 2 -->
+                        <div class=" flex flex-col justify-center items-center relative">
+                            
+                            <div class="bg-[#d0011b] px-2 py-1 absolute top-3 left-2 rounded-md shadow-md">
+                                <p class="text-white text-[10px]">Mall</p>
+                            </div>
+
+                            <div class="bg-[#ffd839] flex flex-col items-center justify-center px-3 py-1 absolute top-2 right-2 text-xs rounded-md shadow-md">
+                                <p class="text-white">ลด</p>
+                                <p class="text-red-600">37%</p>
+                            </div>
+
+                            <div class="bg-[#ee4d2d] px-2 py-1 absolute bottom-10 left-2 rounded-sm shadow-sm flex flex-col justify-center items-center">
+                                <p class="text-white text-[12px]">11.11</p>
+                            </div>
+
+                            <img 
+                            class="w-30  h-30"
+                            src="https://down-th.img.susercontent.com/file/th-11134207-7r98x-lln88ndw76dqe3@resize_w450_nl.webp" alt="">
+                            
+                            <p class="p-2 text-center text-[20px] text-[#d0011b]">฿ 42,625</p>
+
+                            <div class="bg-[#ffbda6] w-[10rem] h-5 rounded-full relative">
+                                <div class="bg-gradient-to-r from-[#f83600] to-[#f9d423] w-3/4 h-5 rounded-full"></div>
+                                <span class="absolute inset-0 flex items-center justify-center text-white text-sm">
+                                  ขายดี
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- ? กล่อง 3 -->
+                        <div class=" flex flex-col justify-center items-center relative">
+
+                            <div class="bg-[#d0011b] px-2 py-1 absolute top-3 left-2 rounded-md shadow-md">
+                                <p class="text-white text-[10px]">Mall</p>
+                            </div>
+
+                            <div class="bg-[#ffd839] flex flex-col items-center justify-center px-3 py-1 absolute top-2 right-2 text-xs rounded-md shadow-md">
+                                <p class="text-white">ลด</p>
+                                <p class="text-red-600">37%</p>
+                            </div>
+
+                            <div class="bg-[#ee4d2d] px-2 py-1 absolute bottom-10 left-2 rounded-sm shadow-sm flex flex-col justify-center items-center">
+                                <p class="text-white text-[12px]">11.11</p>
+                            </div>
+
+                            <img 
+                            class="w-30  h-30"
+                            src="https://down-th.img.susercontent.com/file/th-11134201-7r98p-lysb2km9er3d7c.webp" alt="">
+                            
+                            <p class="p-2 text-center text-[20px] text-[#d0011b]">฿ 284</p>
+
+                            <div class="bg-[#ffbda6] w-[10rem] h-5 rounded-full relative">
+                                <div class="bg-gradient-to-r from-[#f83600] to-[#f9d423] w-1/4 h-5 rounded-full"></div>
+                                <span class="absolute inset-0 flex items-center justify-center text-white text-sm">
+                                  ขายดี
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <!-- ? กล่อง 4 -->
+                        <div class=" flex flex-col justify-center items-center relative">
+
+                            <div class="bg-[#d0011b] px-2 py-1 absolute top-3 left-2 rounded-md shadow-md">
+                                <p class="text-white text-[10px]">Mall</p>
+                            </div>
+
+                            <div class="bg-[#ffd839] flex flex-col items-center justify-center px-3 py-1 absolute top-2 right-2 text-xs rounded-md shadow-md">
+                                <p class="text-white">ลด</p>
+                                <p class="text-red-600">37%</p>
+                            </div>
+
+                            <div class="bg-[#ee4d2d] px-2 py-1 absolute bottom-10 left-2 rounded-sm shadow-sm flex flex-col justify-center items-center">
+                                <p class="text-white text-[12px]">11.11</p>
+                            </div>
+                            
+                            <img 
+                            class="w-30  h-30"
+                            src="https://down-th.img.susercontent.com/file/th-11134201-7r991-lxap3f6z22fj32.webp" alt="">
+
+                            <p class="p-2 text-center text-[20px] text-[#d0011b]">฿ 8,845</p>
+
+                            <div class="bg-[#ffbda6] w-[10rem] h-5 rounded-full relative">
+                                <div class="bg-gradient-to-r from-[#f83600] to-[#f9d423] w-1/4 h-5 rounded-full"></div>
+                                <span class="absolute inset-0 flex items-center justify-center text-white text-sm">
+                                  ขายดี
+                                </span>
+                            </div>
+                        </div>
+
+                        <!--  ? กล่อง 5 -->
+                        <div class=" flex flex-col justify-center items-center relative ">
+
+                            <div class="bg-[#d0011b] px-2 py-1 absolute top-3 left-2 rounded-md shadow-md">
+                                <p class="text-white text-[10px]">Mall</p>
+                            </div>
+
+                            <div class="bg-[#ffd839] flex flex-col items-center justify-center px-3 py-1 absolute top-2 right-2 text-xs rounded-md shadow-md">
+                                <p class="text-white">ลด</p>
+                                <p class="text-red-600">37%</p>
+                            </div>
+
+                            <div class="bg-[#ee4d2d] px-2 py-1 absolute bottom-10 left-2 rounded-sm shadow-sm flex flex-col justify-center items-center">
+                                <p class="text-white text-[12px]">11.11</p>
+                            </div>
+
+                            <img 
+                            class="w-30  h-30"
+                            src="https://down-th.img.susercontent.com/file/th-11134207-7r98o-ll06a6hotpm48b.webp" alt="">
+
+                            <p class="p-2 text-center text-[20px] text-[#d0011b]">฿ 255</p>
+
+                            <div class="bg-[#ffbda6] w-[10rem] h-5 rounded-full relative">
+                                <div class="bg-gradient-to-r from-[#f83600] to-[#f9d423] w-2/4 h-5 rounded-full"></div>
+                                <span class="absolute inset-0 flex items-center justify-center text-white text-sm">
+                                  ขายดี
+                                </span>
+                            </div>
+                        </div>
+
+                        <!--  ? กล่อง 6 -->
+                        <div class=" flex flex-col justify-center items-center relative ">
+
+                            <div class="bg-[#d0011b] px-2 py-1 absolute top-3 left-2 rounded-md shadow-md">
+                                <p class="text-white text-[10px]">Mall</p>
+                            </div>
+
+                            <div class="bg-[#ffd839] flex flex-col items-center justify-center px-3 py-1 absolute top-2 right-2 text-xs rounded-md shadow-md">
+                                <p class="text-white">ลด</p>
+                                <p class="text-red-600">37%</p>
+                            </div>
+
+                               
+                            <div class="bg-[#ee4d2d] px-2 py-1 absolute bottom-10 left-2 rounded-sm shadow-sm flex flex-col justify-center items-center">
+                                <p class="text-white text-[12px]">11.11</p>
+                            </div>
+
+                            <img 
+                            class="w-30  h-30"
+                            src="https://down-th.img.susercontent.com/file/83c9b7872d1dae847668173012e2ebad.webp" alt="">
+
+                            <p class="p-2 text-center text-[20px] text-[#d0011b]">฿ 1,400</p>
+
+                            <div class="bg-[#ffbda6] w-[10rem] h-5 rounded-full relative">
+                                <div class="bg-gradient-to-r from-[#f83600] to-[#f9d423] w-3/4 h-5 rounded-full"></div>
+                                <span class="absolute inset-0 flex items-center justify-center text-white text-sm">
+                                  ขายดี
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="container mx-auto max-w-6xl">
+                    <div>
+                        <a href="">
+                            <img
+                            class="w-full object-cover py-4 " 
+                            src="https://cf.shopee.co.th/file/sg-11134252-7rep5-m22653kt251cbb" alt="">
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <div class="bg-white">
+                    <div class="flex justify-between items-center border border-b-[#e5e7eb] border-t-0 border-r-0 border-l-0">
+                        <div class="flex items-center gap-3 ml-6 py-3">
+                            <p class="text-[#d0011b]">WIZZEE MALL</p>
+                            <span class=" text-[#d8d8d8]">|</span>
+                            <p class="text-[#333333]"><i class="fa-solid fa-bag-shopping mr-2 text-sm text-[#d0011b]"></i>ดีลพิเศษแบรนด์ชั้นนำ</p>
+                            <span class=" text-[#d8d8d8]">|</span>
+                            <p class="text-[#333333]"><i class="fa-solid fa-circle-check mr-2 text-sm text-[#d0011b]"></i>ของแท้ 100%</p>
+                            <span class=" text-[#d8d8d8]">|</span>
+                            <p class="text-[#333333]"><i class="fa-solid fa-rotate-left mr-2 text-sm text-[#d0011b]"></i>คืนเงิน/สินค้าใน 15วัน</p>
+                        </div>
+
+                        <div class="flex items-center pr-3">
+                            <p>ดูทั้งหมด<i class="fa-solid fa-circle-chevron-right text-[#d0011b] ml-2"></i></p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-6 grid-rows-2">
+
+                        <div class="p-2 row-span-2 col-span-2">
+                            <img 
+                            src="https://cf.shopee.co.th/file/th-11134258-7rash-m27zlxs7bqht9f" 
+                            class=" object-cover" 
+                            alt="Main Banner">
+                        </div>
+
+                        <!-- ? Product 1 -->
+                        <div class="py-2 flex flex-col justify-center items-center">
+                            <img 
+                            src="https://down-th.img.susercontent.com/file/th-11134258-7rasa-m29232ccjish05@resize_w201_nl.webp" 
+                            class="h-44 object-cover" 
+                            alt="Product 1">
+                            <p class="text-[#d0011b]">ลดสูงสุด 30%</p>
+                        </div>
+
+                        <!-- ? Product 2 -->
+                        <div class="py-2 flex flex-col justify-center items-center">
+                            <img 
+                            src="https://down-th.img.susercontent.com/file/th-11134258-7rase-m27mo1x2vo2sbb@resize_w201_nl.webp" 
+                            class="h-44 object-cover" 
+                            alt="Product 1">
+                            <p class="text-[#d0011b]">ลดสูงสุด 40%</p>
+                        </div>
+
+                        <!--  ? Product 3 -->
+                        <div class="py-2 flex flex-col justify-center items-center">
+                            <img 
+                            src="https://down-th.img.susercontent.com/file/th-11134258-7rasi-m1dqjqog32yb18@resize_w201_nl.webp" 
+                            class="h-44 object-cover" 
+                            alt="Product 1">
+                            <p class="text-[#d0011b]">ลดสูงสุด 70%</p>
+                        </div>
+
+                        <!-- ? Product 4 -->
+                        <div class="py-2 flex flex-col justify-center items-center">
+                            <img 
+                            src="https://down-th.img.susercontent.com/file/th-11134258-7rasi-m27kil8bsazo9e@resize_w201_nl.webp" 
+                            class="h-44 object-cover" 
+                            alt="Product 1">
+                            <p class="text-[#d0011b]">เปิดตัวสินค้าใหม่</p>
+                        </div>
+
+                        <!-- ? Product 5 -->
+                        <div class="py-2 flex flex-col justify-center items-center">
+                            <img 
+                            src="https://down-th.img.susercontent.com/file/th-11134258-7rasb-m291yuq2f201a6@resize_w201_nl.webp" 
+                            class="h-44 object-cover" 
+                            alt="Product 1">
+                            <p class="text-[#d0011b]">ลดสูงสุด 10%</p>
+                        </div>
+
+                        <!-- ? Product 6 -->
+                        <div class="py-2 flex flex-col justify-center items-center">
+                            <img 
+                            src="https://down-th.img.susercontent.com/file/eb1824065bb778c8e9f7ad6b0863a2e6@resize_w201_nl.webp" 
+                            class="h-44 object-cover" 
+                            alt="Product 1">
+                            <p class="text-[#d0011b]">ลดสูงสุด 30%</p>
+                        </div>
+
+                        <!-- ? Product 7 -->
+                        <div class="py-2 flex flex-col justify-center items-center">
+                            <img 
+                            src="https://down-th.img.susercontent.com/file/a4cf659080a64d2e04d5ab80d94b5bb5@resize_w201_nl.webp" 
+                            class="h-44 object-cover" 
+                            alt="Product 1">
+                            <p class="text-[#d0011b]">ลดสูงสุด 30%</p>
+                        </div>
+
+                        <!-- ? Product 8 -->
+                        <div class="py-2 flex flex-col justify-center items-center">
+                            <img 
+                            src="https://down-th.img.susercontent.com/file/th-11134258-7rasa-m27kt9oj6uap07@resize_w201_nl.webp" 
+                            class="h-44 object-cover" 
+                            alt="Product 1">
+                            <p class="text-[#d0011b]">ลดสูงสุด 50%</p>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
+                
         </div>
 
-    </main>
+    </div>
+
+</main>
 
      
 </body>
