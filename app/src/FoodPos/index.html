@@ -16,15 +16,15 @@
     <div class="container h-screen w-screen flex relative">
         
         <!-- ? sidebar -->
-        <aside class="bg-white h-full w-64   flex flex-col">
+        <aside class="bg-white h-full w-60 flex flex-col z-10">
 
-            <div class="w-full flex items-center justify-center my-8">
-                <p class="text-3xl font-semibold">Food Pos</p>
+            <div class="w-full flex items-center justify-center my-5">
+                <p class="text-3xl font-semibold">Larry Pos</p>
             </div>
 
             <div class="w-full flex items-center justify-center ">
                 <img 
-                    class="rounded-full w-[9rem] h-[9rem] object-cover shadow-md"
+                    class="rounded-full w-[7rem] h-[7rem] object-cover shadow-md"
                     src="https://cdn.pixabay.com/photo/2020/06/20/11/09/cat-5320572_1280.jpg" 
                     alt="">
 
@@ -35,42 +35,136 @@
                 <p class="text-[16px] text-gray-500">Administrator</p>
             </div>
 
-            <section>
+            <section class="h-full flex flex-col justify-between">
+                
                 <div class="flex flex-col justify-center items-start mt-6 gap-6">
 
-                    <div class="p-6 py-6 mx-4  hover:bg-gray-600 hover:text-white w-48 h-12 flex items-center rounded-full transition duration-600">
+                    <div class="px-8 py-6 mx-4  hover:bg-gray-600 hover:text-white w-48 h-12 flex items-center rounded-full transition duration-600">
                         <i class="fa-solid fa-pizza-slice mr-3"></i>
                         <button>Menu</button>
                     </div>
 
-                    <div class="px-6 py-6 mx-4 hover:bg-gray-600 hover:text-white w-48 h-12 flex items-center rounded-full transition duration-600">
+                    <div class="px-8 py-6 mx-4 hover:bg-gray-600 hover:text-white w-48 h-12 flex items-center rounded-full transition duration-600">
                         <i class="fa-solid fa-chart-line mr-3"></i>
                         <button>Accounting</button>
                     </div>
                     
-                    <div class="px-6 py-6 mx-4 hover:bg-gray-600 hover:text-white w-48 h-12 flex items-center rounded-full transition duration-600">
+                    <div class="px-8 py-6 mx-4 hover:bg-gray-600 hover:text-white w-48 h-12 flex items-center rounded-full transition duration-600">
                         <i class="fa-solid fa-calendar-check fa-list mr-3"></i>
                         <button>Reservation</button>
                     </div>
                     
-                    <div class="px-6 py-6 mx-4 hover:bg-gray-600 hover:text-white w-48 h-12 flex items-center rounded-full transition duration-600">
+                    <div class="px-8 py-6 mx-4 hover:bg-gray-600 hover:text-white w-48 h-12 flex items-center rounded-full transition duration-600">
                         <i class="fa-solid fa-truck mr-3"></i>
                         <button>Delivery</button>
                     </div>
                     
-                    <div class="px-6 py-6 mx-4 hover:bg-gray-600 hover:text-white w-48 h-12 flex items-center rounded-full transition duration-600">
+                    <div class="px-8 py-6 mx-4 hover:bg-gray-600 hover:text-white w-48 h-12 flex items-center rounded-full transition duration-600">
                         <i class="fa-solid fa-cog mr-3"></i>
                         <button>Settings</button>
                     </div>
-                    
                 </div>
+                
+                <div class="px-8 py-6 mx-4 mb-5 hover:bg-gray-600 hover:text-white w-48 h-12 flex items-center rounded-full transition duration-600">
+                    <i class="fa-solid fa-right-from-bracket mr-3"></i>
+                    <button>Logout</button>
+                </div>
+
             </section>
 
         </aside>
         <!-- ? End sidebar -->
 
+        <!-- ? navbar -->
+        <div class="w-full h-20 fixed flex items-center justify-between">
+            
+            <!-- ? Search bar-->
+            <div class="ml-60">
+
+                
+                <div class="flex items-center justify-around ml-3 mt-2 gap-3 ">
+
+                    <div class="flex bg-gray-100 items-center justify-center w-full rounded-full shadow-md">
+                        <input
+                        class="bg-gray-100 rounded-full px-4 py-2 outline-none text-sm"
+                        placeholder="Search Menu" 
+                        type="text">
+                        <div class="p-2">
+                            <button class="flex justify-center items-center bg-gray-200 p-2 rounded-full w-8 h-8"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="flex bg-gray-100 items-center justify-center w-full rounded-full shadow-md">
+                        <input
+                        class="bg-gray-100 rounded-full px-4 py-2 outline-none text-sm"
+                        placeholder="Search For Restaurant" 
+                        type="text">
+                        <div class="p-2">
+                            <button class="flex justify-center items-center bg-gray-200 p-2 rounded-full w-8 h-8"><i class="fa-solid fa-store"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- ? End Search bar-->
+
+
+            <!--? icon and profile User-->
+            <div class="flex items-center gap-4 pr-10 mt-2">
+
+                <!-- ? Icon and pic User Info -->
+                <div class="flex items-center gap-4 bg-gray-100 py-2 pl-2 pr-5 rounded-full shadow-md">
+                    <img 
+                        class="w-10 h-10 rounded-full object-cover" 
+                        src="https://cdn.pixabay.com/photo/2020/06/20/11/09/cat-5320572_1280.jpg" 
+                        alt="User Avatar">
+                    <div>
+                        <p class="text-sm font-semibold">Larry Wesker</p>
+                        <p class="text-xs text-gray-500">Administrator</p>
+                    </div>
+                </div>
+                <!-- ? End Icon and pic User Info -->
+                
+                <!-- ? Icon Chat-->
+                <div class="relative">
+                    <button class="p-3 w-10 h-10 bg-gray-100 rounded-full hover:bg-gray-200 flex justify-center items-center text-[16px] shadow-md">
+                        <i class="fa-solid fa-comment"></i>
+                    </button>
+                </div>
+                <!-- ? End Icon Chat-->
+
+                <!-- ? Icon Notifications -->
+                <div class="relative">
+                    <button class="p-3 w-10 h-10 bg-gray-100 rounded-full hover:bg-gray-200 flex justify-center items-center text-[16px] shadow-md">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+                </div>
+                <!-- ? End Icon Notifications -->
+            
+                <!-- ? Icon Logout -->
+                <div class="">
+                    <button class=" bg-gray-100 rounded-full hover:bg-gray-200 w-10 h-10 flex justify-center items-center text-[16px] shadow-md">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </button>
+                </div>
+                <!-- ? End Icon Logout -->
+            
+            </div>
+            <!--? End icon and profile User-->
+            
+            
+
+        </div>
+        <!-- ? End navbar -->
+        
+
+        
+
     </div>
     
-      
+
+    
+    
 </body>
 </html>
