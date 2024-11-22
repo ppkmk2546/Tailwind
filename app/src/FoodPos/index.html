@@ -11,11 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=qr_code_scanner" />
 </head>
-<body class="bg-gray-200">
+<body class="bg-gray-100">
     
     <div class="container h-screen w-screen flex relative">
         
-        <!-- ? sidebar -->
+        <!-- ! sidebar -->
         <aside class="bg-white h-full w-60 flex flex-col z-10">
 
             <div class="w-full flex items-center justify-center my-5">
@@ -73,20 +73,20 @@
             </section>
 
         </aside>
-        <!-- ? End sidebar -->
+        <!-- ! End sidebar -->
 
-        <!-- ? navbar -->
+        <!-- ! navbar -->
         <div class="w-full h-20 fixed flex items-center justify-between">
             
             <!-- ? Search bar-->
-            <div class="ml-60">
+            <div class="ml-64">
 
                 
                 <div class="flex items-center justify-around ml-3 mt-2 gap-3 ">
 
-                    <div class="flex bg-gray-100 items-center justify-center w-full rounded-full shadow-md">
+                    <div class="flex bg-gray-50 items-center justify-center w-full rounded-full shadow-md">
                         <input
-                        class="bg-gray-100 rounded-full px-4 py-2 outline-none text-sm"
+                        class="bg-gray-50 rounded-full px-4 py-2 outline-none text-sm"
                         placeholder="Search Menu" 
                         type="text">
                         <div class="p-2">
@@ -94,9 +94,9 @@
                         </div>
                     </div>
 
-                    <div class="flex bg-gray-100 items-center justify-center w-full rounded-full shadow-md">
+                    <div class="flex bg-gray-50 items-center justify-center w-full rounded-full shadow-md">
                         <input
-                        class="bg-gray-100 rounded-full px-4 py-2 outline-none text-sm"
+                        class="bg-gray-50 rounded-full px-4 py-2 outline-none text-sm"
                         placeholder="Search For Restaurant" 
                         type="text">
                         <div class="p-2">
@@ -114,7 +114,7 @@
             <div class="flex items-center gap-4 pr-10 mt-2">
 
                 <!-- ? Icon and pic User Info -->
-                <div class="flex items-center gap-4 bg-gray-100 py-2 pl-2 pr-5 rounded-full shadow-md">
+                <div class="flex items-center gap-4 bg-gray-50 py-2 pl-2 pr-5 rounded-full shadow-md">
                     <img 
                         class="w-10 h-10 rounded-full object-cover" 
                         src="https://cdn.pixabay.com/photo/2020/06/20/11/09/cat-5320572_1280.jpg" 
@@ -128,7 +128,7 @@
                 
                 <!-- ? Icon Chat-->
                 <div class="relative">
-                    <button class="p-3 w-10 h-10 bg-gray-100 rounded-full hover:bg-gray-200 flex justify-center items-center text-[16px] shadow-md">
+                    <button class="p-3 w-10 h-10 bg-gray-50 rounded-full hover:bg-gray-200 flex justify-center items-center text-[16px] shadow-md">
                         <i class="fa-solid fa-comment"></i>
                     </button>
                 </div>
@@ -136,7 +136,7 @@
 
                 <!-- ? Icon Notifications -->
                 <div class="relative">
-                    <button class="p-3 w-10 h-10 bg-gray-100 rounded-full hover:bg-gray-200 flex justify-center items-center text-[16px] shadow-md">
+                    <button class="p-3 w-10 h-10 bg-gray-50 rounded-full hover:bg-gray-200 flex justify-center items-center text-[16px] shadow-md">
                         <i class="fa-solid fa-bell"></i>
                     </button>
                 </div>
@@ -144,7 +144,7 @@
             
                 <!-- ? Icon Logout -->
                 <div class="">
-                    <button class=" bg-gray-100 rounded-full hover:bg-gray-200 w-10 h-10 flex justify-center items-center text-[16px] shadow-md">
+                    <button class=" bg-gray-50 rounded-full hover:bg-gray-200 w-10 h-10 flex justify-center items-center text-[16px] shadow-md">
                         <i class="fa-solid fa-right-from-bracket"></i>
                     </button>
                 </div>
@@ -153,11 +153,461 @@
             </div>
             <!--? End icon and profile User-->
             
+        </div>
+        <!-- ! End navbar -->
+        
+
+        <!--! content element-->
+        <div class="flex-1 mt-[6rem] mx-10">
+
+            <!-- ? title bar-->
+            <div class="flex justify-between items-center">
+
+                <p class="text-2xl font-bold text-gray-700">Choose Category and Menu
+                    <i class="fa-solid fa-burger text-2xl ml-1 text-gray-700"></i>
+                </p>
+                
+                <div class="flex space-x-3 font-semibold text-gray-700 ">
+
+                    <button class="bg-gray-50 px-6 py-2 rounded-full hover:bg-gray-600 hover:text-white shadow-md transition-all duration-300">
+                        <i class="fa-solid fa-ice-cream mr-1"></i>
+                        Desserts
+                    </button>
+
+                    <button class="bg-gray-50 px-6 py-2 rounded-full hover:bg-gray-600 hover:text-white shadow-md transition-all duration-300">
+                        <i class="fa-solid fa-mug-hot mr-1"></i>
+                        Drinks
+                    </button>
+
+                    <button class="bg-gray-50 px-6 py-2 rounded-full hover:bg-gray-600 hover:text-white shadow-md transition-all duration-300">
+                        <i class="fa-solid fa-pizza-slice mr-1"></i>
+                        Foods
+                    </button>
+
+                    <button class="px-6 py-2 rounded-full bg-gray-600 text-white shadow-md transition-all duration-300">
+                        <i class="fa-solid fa-bars mr-1"></i>
+                        All Menu
+                    </button>
+
+                </div>
+                
+            </div>
+            <!-- ? End title bar-->
+
+            <!--  ! Food -->
+            <div class="grid grid-cols-4 mt-4 gap-3">
+
+                <!-- ! 1 -->
+                <!-- ? card food-->
+                <div class="flex flex-col bg-white rounded-lg shadow-md  hover:scale-105 transition-all duration-600 hover:border-2 hover:border-green-500">
+                    <!-- ? รูปภาพ -->
+                    <div class="relative">
+                        <img 
+                            class="rounded-t-lg h-40 w-full object-cover" 
+                            src="https://cdn.loveandlemons.com/wp-content/uploads/2023/02/vegetarian-pizza.jpg" 
+                            alt="Vegetable Salad">
+                        
+                        <!-- ? ป้ายลดราคา
+                        <div class="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                            20% Off
+                        </div> -->
+                    </div>
+
+                    <!--  ? รายละเอียดอาหาร -->
+                    <div class="py-3 px-4 flex flex-col gap-3">
+
+                        <div>
+                            <p class="text-lg font-semibold text-gray-800">Vegetarian Pizza</p>
+                            <p class="text-sm text-gray-500 mt-1">Healthy Diet</p>
+                        </div>
+
+                        <!--  ? ราคาและประเภท -->
+                        <div class="flex items-center justify-between">
+
+                            <p class="text-gray-800 font-bold text-lg">$17.99</p>
+
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-seedling text-green-600"></i>
+                                <p class="text-xs text-gray-500">Veg</p>
+                            </div>
+
+                        </div>
+
+                        <!-- ? ปุ่มเพิ่มในเมนู -->
+                        <div class="">
+                            <button class="w-full py-2 shadow-sm 
+                                    bg-[#cce9d5] text-green-600 rounded-lg 
+                                    hover:bg-green-600 hover:text-white transition duration-300 font-semibold">
+                                Add to Dish
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ! End 1 -->
+
+                <!-- ! 2 -->
+                <!-- ? card food-->
+                <div class="flex flex-col bg-white rounded-lg shadow-md  hover:scale-105 transition-all duration-600 hover:border-2 hover:border-green-500">
+                    <!-- ? รูปภาพ -->
+                    <div class="relative">
+                        <img 
+                            class="rounded-t-lg h-40 w-full object-cover" 
+                            src="https://img.freepik.com/free-photo/juicy-steak-medium-rare-beef-with-spices-grilled-vegetables_24972-2328.jpg?t=st=1732194569~exp=1732198169~hmac=f7a03c235a3f954354e7f33df51bc457b34c7bc5c272457c47e8c55df394eb42&w=1380" 
+                            alt="Vegetable Salad">
+                        
+                        <!-- ? ป้ายลดราคา -->
+                        <div class="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                            10% Off
+                        </div>
+                    </div>
+
+                    <!--  ? รายละเอียดอาหาร -->
+                    <div class="py-3 px-4 flex flex-col gap-3">
+
+                        <div>
+                            <p class="text-lg font-semibold text-gray-800">Beef Steak</p>
+                            <p class="text-sm text-gray-500 mt-1">Meat Dishes</p>
+                        </div>
+
+                        <!--  ? ราคาและประเภท -->
+                        <div class="flex items-center justify-between">
+
+                            <p class="text-gray-800 font-bold text-lg">$17.99</p>
+
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-seedling text-green-600"></i>
+                                <p class="text-xs text-gray-500">Non-Veg</p>
+                            </div>
+
+                        </div>
+
+                        <!-- ? ปุ่มเพิ่มในเมนู -->
+                        <div class="">
+                            <button class="w-full py-2 shadow-sm 
+                                    bg-[#cce9d5] text-green-600 rounded-lg 
+                                    hover:bg-green-600 hover:text-white transition duration-300 font-semibold">
+                                Add to Dish
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ! End 2 -->
+
+
+                <!-- ! 3 -->
+                <!-- ? card food-->
+                <div class="flex flex-col bg-white rounded-lg shadow-md  hover:scale-105 transition-all duration-600 hover:border-2 hover:border-green-500">
+                    <!-- ? รูปภาพ -->
+                    <div class="relative">
+                        <img 
+                            class="rounded-t-lg h-40 w-full object-cover" 
+                            src="https://wallpapers.com/images/featured/pasta-6ze2wamx7po1v98p.jpg" 
+                            alt="Vegetable Salad">
+                        
+                        <!-- ? ป้ายลดราคา -->
+                        <div class="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                            10% Off
+                        </div>
+                    </div>
+
+                    <!--  ? รายละเอียดอาหาร -->
+                    <div class="py-3 px-4 flex flex-col gap-3">
+
+                        <div>
+                            <p class="text-lg font-semibold text-gray-800">Spaghetti Bolognese</p>
+                            <p class="text-sm text-gray-500 mt-1">Pasta Dishes</p>
+                        </div>
+
+                        <!--  ? ราคาและประเภท -->
+                        <div class="flex items-center justify-between">
+
+                            <p class="text-gray-800 font-bold text-lg">$17.99</p>
+
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-seedling text-green-600"></i>
+                                <p class="text-xs text-gray-500">Non-Veg</p>
+                            </div>
+
+                        </div>
+
+                        <!-- ? ปุ่มเพิ่มในเมนู -->
+                        <div class="">
+                            <button class="w-full py-2 shadow-sm 
+                                    bg-[#cce9d5] text-green-600 rounded-lg 
+                                    hover:bg-green-600 hover:text-white transition duration-300 font-semibold">
+                                Add to Dish
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ! End 3 -->
+
+
+                <!-- ! 4 -->
+                <!-- ? card food-->
+                <div class="flex flex-col bg-white rounded-lg shadow-md  hover:scale-105 transition-all duration-600 hover:border-2 hover:border-green-500">
+                    <!-- ? รูปภาพ -->
+                    <div class="relative">
+                        <img 
+                            class="rounded-t-lg h-40 w-full object-cover" 
+                            src="https://cdn.pixabay.com/photo/2022/08/13/11/26/salad-7383435_960_720.jpg" 
+                            alt="Vegetable Salad">
+                        
+                        <!-- ? ป้ายลดราคา -->
+                        <!-- <div class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                            20% Off
+                        </div> -->
+                    </div>
+
+                    <!--  ? รายละเอียดอาหาร -->
+                    <div class="py-3 px-4 flex flex-col gap-3">
+
+                        <div>
+                            <p class="text-lg font-semibold text-gray-800">Salad</p>
+                            <p class="text-sm text-gray-500 mt-1">Healthy Diet</p>
+                        </div>
+
+                        <!--  ? ราคาและประเภท -->
+                        <div class="flex items-center justify-between">
+
+                            <p class="text-gray-800 font-bold text-lg">$14.99</p>
+
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-seedling text-green-600"></i>
+                                <p class="text-xs text-gray-500">Veg</p>
+                            </div>
+
+                        </div>
+
+                        <!-- ? ปุ่มเพิ่มในเมนู -->
+                        <div class="">
+                            <button class="w-full py-2 shadow-sm 
+                                    bg-[#cce9d5] text-green-600 rounded-lg 
+                                    hover:bg-green-600 hover:text-white transition duration-300 font-semibold">
+                                Add to Dish
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- ! End 4 -->
+
+            </div>
+            <!--  ! End Food -->
             
+            <h1 class="text-xl font-bold mt-5 text-gray-700">
+                Top Dishes of the Week
+            </h1>
+            
+            <!--  ! Food -->
+            <div class="grid grid-cols-4 mt-4 gap-3">
+
+                <!-- ! 1 -->
+                <!-- ? card food-->
+                <div class="flex flex-col bg-white rounded-lg shadow-md  hover:scale-105 transition-all duration-600 hover:border-2 hover:border-green-500">
+                    <!-- ? รูปภาพ -->
+                    <div class="relative">
+                        <img 
+                            class="rounded-t-lg h-40 w-full object-cover" 
+                            src="https://wallpapercrafter.com/desktop7/1725344-dessert-4k-free-hd-desktop-wallpaper-background-food.jpg" 
+                            alt="Vegetable Salad">
+                        
+                        <!-- ? ป้ายลดราคา
+                        <div class="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                            20% Off
+                        </div> -->
+                    </div>
+
+                    <!--  ? รายละเอียดอาหาร -->
+                    <div class="py-3 px-4 flex flex-col gap-3">
+
+                        <div>
+                            <p class="text-lg font-semibold text-gray-800">Cake Chocolate</p>
+                            <p class="text-sm text-gray-500 mt-1">Desserts</p>
+                        </div>
+
+                        <!--  ? ราคาและประเภท -->
+                        <div class="flex items-center justify-between">
+
+                            <p class="text-gray-800 font-bold text-lg">$12.99</p>
+
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-seedling text-green-600"></i>
+                                <p class="text-xs text-gray-500">Veg</p>
+                            </div>
+
+                        </div>
+
+                        <!-- ? ปุ่มเพิ่มในเมนู -->
+                        <div class="">
+                            <button class="w-full py-2 shadow-sm 
+                                    bg-[#cce9d5] text-green-600 rounded-lg 
+                                    hover:bg-green-600 hover:text-white transition duration-300 font-semibold">
+                                Add to Dish
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ! End 1 -->
+
+                <!-- ! 2 -->
+                <!-- ? card food-->
+                <div class="flex flex-col bg-white rounded-lg shadow-md  hover:scale-105 transition-all duration-600 hover:border-2 hover:border-green-500">
+                    <!-- ? รูปภาพ -->
+                    <div class="relative">
+                        <img 
+                            class="rounded-t-lg h-40 w-full object-cover" 
+                            src="https://www.allrecipes.com/thmb/Pn6CJYfILCBbnJgkkPfLWh-Aga0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/45396-easy-pancakes-mfs-38-34bd7f71161446bfb69609fa46a301e4.jpg" 
+                            alt="Vegetable Salad">
+                        
+                        <!-- ? ป้ายลดราคา -->
+                        <!-- <div class="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                            10% Off
+                        </div> -->
+                    </div>
+
+                    <!--  ? รายละเอียดอาหาร -->
+                    <div class="py-3 px-4 flex flex-col gap-3">
+
+                        <div>
+                            <p class="text-lg font-semibold text-gray-800">Pancake</p>
+                            <p class="text-sm text-gray-500 mt-1">Desserts</p>
+                        </div>
+
+                        <!--  ? ราคาและประเภท -->
+                        <div class="flex items-center justify-between">
+
+                            <p class="text-gray-800 font-bold text-lg">$27.99</p>
+
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-seedling text-green-600"></i>
+                                <p class="text-xs text-gray-500">Veg</p>
+                            </div>
+
+                        </div>
+
+                        <!-- ? ปุ่มเพิ่มในเมนู -->
+                        <div class="">
+                            <button class="w-full py-2 shadow-sm 
+                                    bg-[#cce9d5] text-green-600 rounded-lg 
+                                    hover:bg-green-600 hover:text-white transition duration-300 font-semibold">
+                                Add to Dish
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ! End 2 -->
+
+
+                <!-- ! 3 -->
+                <!-- ? card food-->
+                <div class="flex flex-col bg-white rounded-lg shadow-md  hover:scale-105 transition-all duration-600 hover:border-2 hover:border-green-500">
+                    <!-- ? รูปภาพ -->
+                    <div class="relative">
+                        <img 
+                            class="rounded-t-lg h-40 w-full object-cover" 
+                            src="https://www.hfhotels.com/conteudos/hf-hotels-cocktail-sex-on-beach.jpg" 
+                            alt="Vegetable Salad">
+                        
+                        <!-- ? ป้ายลดราคา -->
+                        <!-- <div class="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                            10% Off
+                        </div> -->
+                    </div>
+
+                    <!--  ? รายละเอียดอาหาร -->
+                    <div class="py-3 px-4 flex flex-col gap-3">
+
+                        <div>
+                            <p class="text-lg font-semibold text-gray-800">Orange Cocktails</p>
+                            <p class="text-sm text-gray-500 mt-1">Drinks</p>
+                        </div>
+
+                        <!--  ? ราคาและประเภท -->
+                        <div class="flex items-center justify-between">
+
+                            <p class="text-gray-800 font-bold text-lg">$15.99</p>
+
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-seedling text-green-600"></i>
+                                <p class="text-xs text-gray-500">Veg</p>
+                            </div>
+
+                        </div>
+
+                        <!-- ? ปุ่มเพิ่มในเมนู -->
+                        <div class="">
+                            <button class="w-full py-2 shadow-sm 
+                                    bg-[#cce9d5] text-green-600 rounded-lg 
+                                    hover:bg-green-600 hover:text-white transition duration-300 font-semibold">
+                                Add to Dish
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ! End 3 -->
+
+
+                <!-- ! 4 -->
+                <!-- ? card food-->
+                <div class="flex flex-col bg-white rounded-lg shadow-md  hover:scale-105 transition-all duration-600 hover:border-2 hover:border-green-500">
+                    <!-- ? รูปภาพ -->
+                    <div class="relative">
+                        <img 
+                            class="rounded-t-lg h-40 w-full object-cover" 
+                            src="https://cdn.pixabay.com/photo/2022/08/13/11/26/salad-7383435_960_720.jpg" 
+                            alt="Vegetable Salad">
+                        
+                        <!-- ? ป้ายลดราคา -->
+                        <!-- <div class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                            20% Off
+                        </div> -->
+                    </div>
+
+                    <!--  ? รายละเอียดอาหาร -->
+                    <div class="py-3 px-4 flex flex-col gap-3">
+
+                        <div>
+                            <p class="text-lg font-semibold text-gray-800">Salad</p>
+                            <p class="text-sm text-gray-500 mt-1">Healthy Diet</p>
+                        </div>
+
+                        <!--  ? ราคาและประเภท -->
+                        <div class="flex items-center justify-between">
+
+                            <p class="text-gray-800 font-bold text-lg">$14.99</p>
+
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-seedling text-green-600"></i>
+                                <p class="text-xs text-gray-500">Veg</p>
+                            </div>
+
+                        </div>
+
+                        <!-- ? ปุ่มเพิ่มในเมนู -->
+                        <div class="">
+                            <button class="w-full py-2 shadow-sm 
+                                    bg-[#cce9d5] text-green-600 rounded-lg 
+                                    hover:bg-green-600 hover:text-white transition duration-300 font-semibold">
+                                Add to Dish
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- ! End 4 -->
+
+            </div>
+            <!--  ! End Food -->
 
         </div>
-        <!-- ? End navbar -->
-        
+        <!--? End content element-->
 
         
 
