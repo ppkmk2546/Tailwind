@@ -14,9 +14,10 @@
 <body class="bg-gray-100">
     
     <div class="container h-screen w-screen flex relative">
-        
+
         <!-- ! sidebar -->
-        <aside class="bg-white h-full w-60 flex flex-col z-10">
+        <aside class="bg-white h-full w-60 flex flex-col z-50 fixed top-0 left-0">
+            
 
             <div class="w-full flex items-center justify-center my-5">
                 <p class="text-3xl font-semibold">Larry Pos</p>
@@ -76,7 +77,7 @@
         <!-- ! End sidebar -->
 
         <!-- ! navbar -->
-        <div class="w-full h-20 fixed flex items-center justify-between">
+        <div class="w-full h-20 fixed flex items-center justify-between z-10">
             
             <!-- ? Search bar-->
             <div class="ml-64">
@@ -158,7 +159,7 @@
         
 
         <!--! content element-->
-        <div class="flex-1 mt-[6rem] mx-10">
+        <div class="flex-1 mt-[6rem] mx-10 pl-60">
 
             <!-- ? title bar-->
             <div class="flex justify-between items-center">
@@ -194,7 +195,7 @@
             </div>
             <!-- ? End title bar-->
 
-            <!--  ! Food -->
+            <!--  ! Food Menu -->
             <div class="grid grid-cols-4 mt-4 gap-3">
 
                 <!-- ! 1 -->
@@ -257,9 +258,9 @@
                             alt="Vegetable Salad">
                         
                         <!-- ? ป้ายลดราคา -->
-                        <div class="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                        <!-- <div class="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full font-semibold">
                             10% Off
-                        </div>
+                        </div> -->
                     </div>
 
                     <!--  ? รายละเอียดอาหาร -->
@@ -307,9 +308,9 @@
                             alt="Vegetable Salad">
                         
                         <!-- ? ป้ายลดราคา -->
-                        <div class="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                        <!-- <div class="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full font-semibold">
                             10% Off
-                        </div>
+                        </div> -->
                     </div>
 
                     <!--  ? รายละเอียดอาหาร -->
@@ -402,7 +403,7 @@
                 Top Dishes of the Week
             </h1>
             
-            <!--  ! Food -->
+            <!--  ! Top Food Week -->
             <div class="grid grid-cols-4 mt-4 gap-3">
 
                 <!-- ! 1 -->
@@ -604,11 +605,246 @@
                 <!-- ! End 4 -->
 
             </div>
-            <!--  ! End Food -->
+            <!--  ! End Top Food Week -->
+
+            <!-- ! Favorite Restaurant -->
+            <h2 class="mt-4 text-xl font-semibold text-gray-700">Favorite Restaurant</h2>
+
+            <!-- ? grid-2 -->
+            <div class="grid grid-cols-2 gap-4 py-5">
+
+                <!-- ? Res-1 -->
+                <div class=" flex rounded-lg p-5 bg-white shadow-lg">
+                    <img
+                    class="w-4/6 object-cover rounded-md"
+                    src="https://www.prideinn.co.ke/wp-content/uploads/2024/06/Sayari-Restaurant-PrideInn-Westlands.webp" 
+                    alt="">
+
+
+                    <div class="flex items-start ml-4">
+
+                        <div class="">
+                            <h1 class="mt-4 font-semibold text-gray-700 text-[20px]">Larry Restaurant</h1>
+                            <p class="mt-4 text-gray-400 text-sm"><i class="fa-solid fa-location-dot text-gray-700 text-sm mr-2"></i>251/2 Seattle 900478</p>
+                            <p class="mt-4 text-gray-400 text-sm"><i class="fa-solid fa-envelope text-gray-700 text-sm mr-2"></i>LarryRes@gmail.com</p>
+                            <p class="mt-4 text-gray-400 text-sm"><i class="fa-solid fa-phone text-gray-700 text-sm mr-2"></i>077-888-9999</p>
+                            <p class="mt-4 text-gray-400 text-sm"><i class="fa-solid fa-thumbs-up text-gray-700 text-sm mr-2"></i>Total Like</p>
+                            
+                            <div class="flex mt-4 text-sm  text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <div class="mt-4 flex justify-center items-center">
+                                <button class="w-full py-2 shadow-sm 
+                                        bg-[#cce9d5] text-green-600 rounded-lg 
+                                        hover:bg-green-600 hover:text-white transition duration-300 font-semibold">
+                                        Reserve
+                                </button>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- ? End Res-1 -->
+
+
+                <!-- ? Res-2 -->
+                <div class=" flex rounded-lg p-5 bg-white shadow-lg">
+                    <img
+                    class="w-4/6 object-cover rounded-md"
+                    src="https://hotelsabovepar.com/wp-content/uploads/2024/07/image-38-2-1024x683.jpg" 
+                    alt="">
+
+
+                    <div class="flex items-start ml-4">
+
+                        <div class="">
+                            <h1 class="mt-4 font-semibold text-gray-700 text-[20px]">Iitalino</h1>
+                            <p class="mt-4 text-gray-400 text-sm"><i class="fa-solid fa-location-dot text-gray-600 text-sm mr-2"></i>251/2 Bangkok 12000</p>
+                            <p class="mt-4 text-gray-400 text-sm"><i class="fa-solid fa-envelope text-gray-600 text-sm mr-2"></i>LarryRes@gmail.com</p>
+                            <p class="mt-4 text-gray-400 text-sm"><i class="fa-solid fa-phone text-gray-600 text-sm mr-2"></i>077-888-9999</p>
+                            <p class="mt-4 text-gray-400 text-sm"><i class="fa-solid fa-thumbs-up text-gray-600 text-sm mr-2"></i>Total Like</p>
+                            
+                            <div class="flex mt-4 text-sm  text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <div class="mt-4 flex justify-center items-center">
+                                <button class="w-full py-2 shadow-sm 
+                                        bg-[#cce9d5] text-green-600 rounded-lg 
+                                        hover:bg-green-600 hover:text-white transition duration-300 font-semibold">
+                                        Reserve
+                                </button>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- ? End Res-2 -->
+
+            </div>
+            <!-- ? End grid-2 -->
 
         </div>
-        <!--? End content element-->
+        <!--! End content element-->
 
+        <!-- ! order -->
+        <div class="bg-gray-300 rounded-md shadow-sm fixed right-4 top-[6.5rem] bottom-5 w-1/6 mx-5 p-7">
+
+            <!-- ? title and btn-->
+            <div class="flex items-center justify-between ">
+
+                <h1 class="font-bold text-[18px] text-gray-700">
+                    My Order
+                </h1>
+                
+                <button class="bg-gray-700 px-3 py-2 rounded-md text-white font-bold">
+                    Edit
+                </button>
+                
+            </div>
+            <!-- ? End title and btn-->
+
+
+            <!-- ? status and message-->
+            <div class="mt-5 font-semibold">
+
+                <div class="flex items-center">
+                    <div class="w-8 h-8 bg-gray-200 flex justify-center items-center rounded-full">
+                        <i class="fa-solid fa-clock text-gray-600 text-[18px]"></i>
+                    </div>
+                    <span class="ml-2 text-gray-700">08:00 AM</span>
+                </div>
+
+                <div class="flex items-center mt-3">
+                    <div class="w-8 h-8 bg-gray-200 flex justify-center items-center rounded-full">
+                        <i class="fa-solid fa-location-dot text-gray-600 text-[18px]"></i>
+                    </div>
+                    <span class="ml-2 text-gray-700">12 Seattle, Kerry Park 1540</span>
+                </div>
+
+                <div class="flex items-center mt-3">
+                    <div class="w-8 h-8 bg-gray-200 flex justify-center items-center rounded-full">
+                        <i class="fa-solid fa-comment text-gray-600 text-[18px]"></i>
+                    </div>
+                    <span class="ml-2 text-gray-700">Orders Must Stay warm</span>
+                </div>
+
+            </div>
+            <!-- ? End status and message-->
+            
+            <!-- ? order menu -->
+            <div class="mt-6 flex flex-col gap-4">
+
+                <!-- ? order 1 -->
+                <div class="flex items-center justify-between bg-gray-200 rounded-md px-3 py-2 shadow-md">
+
+                    <img 
+                    class="w-16 h-16 object-cover rounded-lg shadow-sm"
+                    src="https://cdn.pixabay.com/photo/2022/08/13/11/26/salad-7383435_960_720.jpg" 
+                    alt="">
+
+                    <div class="text-sm ">
+                        <p class=" text-gray-700 font-semibold">Salad</p>
+                        <p class=" text-gray-500 mt-1 text-xs">350 G</p>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-2 py-2 pl-2">
+
+                        <button class="px-2 bg-[#cce9d5] text-green-600 rounded-md hover:bg-green-600 hover:text-white transition duration-300">-</button>
+
+                        <input 
+                            class="w-4 text-center bg-gray-200 text-gray-700 text-sm font-semibold "
+                            type="text" 
+                            name="" 
+                            id="" 
+                            value="2">
+
+                        <button class="px-2 bg-[#cce9d5] text-green-600 rounded-md hover:bg-green-600 hover:text-white transition duration-300">+</button>
+                        
+                    </div>
+
+                </div>
+                <!-- ? End order 1 -->
+
+                <!-- ? order 2 -->
+                <div class="flex items-center justify-between bg-gray-200 rounded-md px-3 py-2 shadow-md">
+
+                    <img 
+                    class="w-16 h-16 object-cover rounded-lg shadow-sm"
+                    src="https://wallpapercrafter.com/desktop7/1725344-dessert-4k-free-hd-desktop-wallpaper-background-food.jpg" 
+                    alt="">
+
+                    <div class="text-sm ">
+                        <p class=" text-gray-700 font-semibold">Salad</p>
+                        <p class=" text-gray-500 mt-1 text-xs">350 G</p>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-2 py-2 pl-2">
+
+                        <button class="px-2 bg-[#cce9d5] text-green-600 rounded-md hover:bg-green-600 hover:text-white transition duration-300">-</button>
+
+                        <input 
+                            class="w-4 text-center bg-gray-200 text-gray-700 text-sm font-semibold "
+                            type="text" 
+                            name="" 
+                            id="" 
+                            value="2">
+
+                        <button class="px-2 bg-[#cce9d5] text-green-600 rounded-md hover:bg-green-600 hover:text-white transition duration-300">+</button>
+                        
+                    </div>
+
+                </div>
+                <!-- ? End order 2 -->
+
+                <!-- ? order 3 -->
+                <div class="flex items-center justify-between bg-gray-200 rounded-md px-3 py-2 shadow-md">
+
+                    <img 
+                    class="w-16 h-16 object-cover rounded-lg shadow-sm"
+                    src="https://cdn.loveandlemons.com/wp-content/uploads/2023/02/vegetarian-pizza.jpg" 
+                    alt="">
+
+                    <div class="text-sm ">
+                        <p class=" text-gray-700 font-semibold">Salad</p>
+                        <p class=" text-gray-500 mt-1 text-xs">350 G</p>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-2 py-2 pl-2">
+
+                        <button class="px-2 bg-[#cce9d5] text-green-600 rounded-md hover:bg-green-600 hover:text-white transition duration-300">-</button>
+
+                        <input 
+                            class="w-4 text-center bg-gray-200 text-gray-700 text-sm font-semibold "
+                            type="text" 
+                            name="" 
+                            id="" 
+                            value="2">
+
+                        <button class="px-2 bg-[#cce9d5] text-green-600 rounded-md hover:bg-green-600 hover:text-white transition duration-300">+</button>
+                        
+                    </div>
+
+                </div>
+                <!-- ? End order 3 -->
+
+            </div>
+            <!-- ? order menu -->
+
+        </div>
+        <!-- ! End order -->
         
 
     </div>
